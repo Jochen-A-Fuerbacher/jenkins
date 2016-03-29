@@ -1150,10 +1150,10 @@ public abstract class View extends AbstractModelObject implements AccessControll
     /**
      * Permission to create new views.
      */
-    public static final Permission CREATE = new Permission(PERMISSIONS,"Create", Messages._View_CreatePermission_Description(), Permission.CREATE, PermissionScope.ITEM_GROUP);
-    public static final Permission DELETE = new Permission(PERMISSIONS,"Delete", Messages._View_DeletePermission_Description(), Permission.DELETE, PermissionScope.ITEM_GROUP);
-    public static final Permission CONFIGURE = new Permission(PERMISSIONS,"Configure", Messages._View_ConfigurePermission_Description(), Permission.CONFIGURE, PermissionScope.ITEM_GROUP);
-    public static final Permission READ = new Permission(PERMISSIONS,"Read", Messages._View_ReadPermission_Description(), Permission.READ, PermissionScope.ITEM_GROUP);
+    public static final Permission CREATE = new Permission(PERMISSIONS,"Create", Messages._View_CreatePermission_Description(), Permission.CREATE, PermissionScope.VIEW);
+    public static final Permission DELETE = new Permission(PERMISSIONS,"Delete", Messages._View_DeletePermission_Description(), Permission.DELETE, PermissionScope.VIEW);
+    public static final Permission CONFIGURE = new Permission(PERMISSIONS,"Configure", Messages._View_ConfigurePermission_Description(), Permission.CONFIGURE, PermissionScope.VIEW);
+    public static final Permission READ = new Permission(PERMISSIONS,"Read", Messages._View_ReadPermission_Description(), Permission.READ, PermissionScope.VIEW);
 
     // to simplify access from Jelly
     public static Permission getItemCreatePermission() {
