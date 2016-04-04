@@ -30,6 +30,7 @@ import hudson.model.Item;
 import hudson.model.ItemGroup;
 import hudson.model.Job;
 import hudson.model.ModelObject;
+import hudson.model.Node;
 import hudson.model.Run;
 import hudson.model.View;
 import jenkins.model.Jenkins;
@@ -116,5 +117,8 @@ public final class PermissionScope {
      */
     public static final PermissionScope COMPUTER = new PermissionScope(Computer.class,JENKINS);
     
+    /**
+     * Permissions scoped to {@link View}s.
+     */
     public static final PermissionScope VIEW = new PermissionScope(View.class,JENKINS);
 }
