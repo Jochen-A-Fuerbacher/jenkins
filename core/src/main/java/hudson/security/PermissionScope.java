@@ -31,11 +31,10 @@ import hudson.model.ItemGroup;
 import hudson.model.Job;
 import hudson.model.ModelObject;
 import hudson.model.Run;
+import hudson.model.View;
 import jenkins.model.Jenkins;
 
 import java.util.Set;
-
-import org.springframework.web.servlet.View;
 
 /**
  * Represents the model class {@link Permission} acts on and scoped to.
